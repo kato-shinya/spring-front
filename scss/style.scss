@@ -1,0 +1,199 @@
+//<------------header------------>//
+
+.header {
+  background-color: #212529;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 160px;
+  }
+
+  // .container {
+  //   max-width: 1040px;
+  //   padding: 0 16px;
+  //   margin: 0 auto;
+  // }
+
+  .search {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+
+    &__input {
+      width: 320px;
+      height: 32px;
+      border-radius: 16px;
+      padding: 0 16px 0 48px;
+      outline: none;
+      border: none;
+    }
+
+    &__icon {
+      transform: translateX(40px);
+      appearance: none;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      padding: 0;
+      :hover {
+        opacity: 0.5;
+      }
+      .fas {
+        color: #212529;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+
+    &__item {
+      font-size: 16px;
+      padding: 8px;
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+
+      :hover {
+        opacity: 0.5;
+      }
+
+      a::after {
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background: white;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+      }
+
+      a:hover::after {
+        bottom: -1px;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+//アイコンの設定
+.fas {
+  padding: 4px;
+}
+
+.fa-icon {
+  padding: 4px;
+}
+
+//<------------header------------>//
+
+//<------------main------------>//
+
+.filter {
+  display: flex;
+  text-align: center;
+}
+
+.items {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 16px 0;
+}
+
+.item {
+  border: solid 2px #212529;
+  border-radius: 8px;
+  background: #ebecec;
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+  }
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: grey;
+    margin-right: 16px;
+  }
+  &__thumbnail {
+    height: 240px;
+    background: grey;
+  }
+  &__body {
+    display: flex;
+    align-items: center;
+  }
+  &__amazon-button {
+    flex: 1;
+    text-align: center;
+  }
+  &__body-buttons {
+    border-left: 2px solid #212529;
+  }
+  &__button {
+    padding: 8px;
+    text-align: center;
+    & + & {
+      border-top: 2px solid #212529;
+    }
+  }
+}
+
+//<------------main------------>//
+
+//<------------footer------------>//
+
+// .footer__wrap {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+.footer {
+  background: #212529;
+  color: white;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  .copy {
+    margin: 0 auto;
+  }
+}
+//<------------footer------------>//
+
+// 中央寄せ
+.container {
+  max-width: 1040px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+// 中央寄せ
+
+// footerを固定
+body {
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+main {
+  background: #ffffff;
+  flex: 1;
+}
+// footerを固定
