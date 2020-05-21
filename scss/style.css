@@ -141,6 +141,10 @@
   padding: 16px;
 }
 
+.item__name {
+  margin-right: 32px;
+}
+
 .item__avatar {
   width: 40px;
   height: 40px;
