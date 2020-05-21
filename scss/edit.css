@@ -1,4 +1,44 @@
-.edit {
-  color: red;
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.left-content {
+  width: 50%;
+  height: 600px;
+  padding: 30px;
+}
+
+.post-table {
+  margin-top: 20px;
+  border-collapse: separate;
+  border-spacing: 2px;
+  width: 100%;
+}
+
+.post-table th,
+.post-table td {
+  border-radius: calc(0.25rem - 1px);
+  padding: 10px 0;
+}
+
+.post-table th {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.post-table td {
+  background-color: rgba(0, 0, 0, 0.07);
+  padding-left: 7px;
+}
+
+.right-content {
+  width: 50%;
+  height: 800px;
+  background-color: blue;
 }
 /*# sourceMappingURL=edit.css.map */
