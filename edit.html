@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="scss/reset.css" />
     <link rel="stylesheet" href="scss/edit.css" />
     <link rel="stylesheet" href="scss/style.css" />
-    <title>BookTalk</title>
+    <title>BOOKTALK</title>
   </head>
   <body>
     <!------------header------------>
     <header class="header">
       <div class="container">
         <div class="header__wrap">
-          <a href="#">
+          <a href="index.html">
             <img class="header__logo" src="./images/BooKTalk-logo.png" alt="" />
           </a>
           <div class="search">
@@ -52,10 +52,14 @@
           <div class="left-content">
             <div class="item">
               <div class="item__header">
-                <div class="item__avatar"></div>
-                <p class="item__name">加藤慎也</p>
+                <img class="item__avatar" src="./images/icon03.jpg" alt="" />
+                <p class="item__name">テストユーザー</p>
               </div>
-              <div class="item__thumbnail"></div>
+              <div class="item__thumbnail">
+                <a href="edit.html">
+                  <img src="./images/dummy1.jpg" alt="" />
+                </a>
+              </div>
               <div class="item__body">
                 <div class="item__amazon-button">
                   <i class="fab fa-aws fa-icon"></i>Amazonで購入
@@ -70,24 +74,104 @@
                 </div>
               </div>
             </div>
-            <table class="post-table">
+            <table class="book-table">
               <tbody>
                 <tr>
                   <th>タイトル</th>
-                  <td>リーダブルコード</td>
+                  <td>ダミータイトル</td>
                 </tr>
                 <tr>
-                  <th>出版社</th>
-                  <td>ちょうどいい</td>
+                  <th>著者</th>
+                  <td>ダミー著者</td>
                 </tr>
                 <tr>
-                  <th>予想</th>
-                  <td>晴れそう</td>
+                  <th>感想</th>
+                  <td>
+                    Lorem ipsum dolor sit.
+                    <br />
+                    Lorem ipsum dolor sit amet.
+                    <br />
+                    ここに感想を記載します。
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <div class="right-content"></div>
+          <div class="right-content">
+            <div class="tab-wrap">
+              <input
+                id="TAB-01"
+                type="radio"
+                name="TAB"
+                class="tab-switch"
+                checked="checked"
+              /><label class="tab-label" for="TAB-01">コメント 2件</label>
+              <div class="tab-content">
+                <div class="comment-area">
+                  <p>コメントを入力（100文字以内）</p>
+                  <textarea name="" id="" cols="40" rows="4"></textarea>
+                  <input type="submit" value="コメントを送信する" />
+                </div>
+                <div class="comment-list">
+                  <p class="comment-list__title">コメント</p>
+                  <div class="comment">
+                    <p></p>
+                    <p>この本を読んだことがある人いますか？</p>
+                    <p></p>
+                    <div class="comment__user">
+                      <a href=""
+                        ><img
+                          class="comment__avatar"
+                          src="./images/icon03.jpg"
+                          alt=""
+                      /></a>
+                      <span>テストユーザー</span>
+                    </div>
+                  </div>
+                  <div class="comment">
+                    <p></p>
+                    <p>読んだことあります。</p>
+                    <p>面白かったです。</p>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p></p>
+                    <div class="comment__user">
+                      <a href=""
+                        ><img
+                          class="comment__avatar"
+                          src="./images/icon02.webp"
+                          alt=""
+                      /></a>
+                      <span>てすとゆーざー</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <input
+                id="TAB-02"
+                type="radio"
+                name="TAB"
+                class="tab-switch"
+              /><label class="tab-label" for="TAB-02">いいね 2</label>
+              <div class="tab-content">
+                <div class="like-card">
+                  <!-- <img
+                    class="like-card__avatar"
+                    src="./images/icon02.webp"
+                    alt=""
+                  /> -->
+                  <span>てすとゆーざー</span>
+                </div>
+                <div class="like-card">
+                  <!-- <img
+                    class="like-card__avatar"
+                    src="./images/icon02.webp"
+                    alt=""
+                  /> -->
+                  <span>てすとゆーざー</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -96,7 +180,7 @@
     <!------------footer------------>
     <footer class="footer">
       <small class="copy"
-        >Copyright © 2020 BookTalk, All Rights Reserved.</small
+        >Copyright © 2020 BOOKTALK, All Rights Reserved.</small
       >
     </footer>
     <!------------footer------------>
