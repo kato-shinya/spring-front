@@ -118,16 +118,10 @@ legend {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
-  color: white;
+  color: #333333;
   text-decoration: none;
 }
-
-a :hover {
-  opacity: 0.5;
-}
-/*# sourceMappingURL=reset.css.map */
