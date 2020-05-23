@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <link rel="stylesheet" href="scss/reset.css" />
+    <link rel="stylesheet" href="scss/login.css" />
+    <title>BOOKTALK</title>
+  </head>
+  <body>
+    <!------------header------------>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrap">
+          <a href="index.html">
+            <img class="header__logo" src="./images/BooKTalk-logo.png" alt="" />
+          </a>
+          <div class="search">
+            <button class="search__icon"><i class="fas fa-search"></i></button>
+            <input
+              class="search__input"
+              type="search"
+              autocomplete="off"
+              placeholder="本を検索する"
+            />
+          </div>
+          <ul class="nav">
+            <!-- 未ログイン時 -->
+            <li class="nav__item">
+              <a href="singup"><i class="fas fa-user-plus"></i>新規登録</a>
+            </li>
+            <li class="nav__item">
+              <a href="login"><i class="fas fa-sign-in-alt"></i>ログイン</a>
+            </li>
+            <!-- 未ログイン時 -->
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!------------header------------>
+
+    <!-------------main------------->
+    <main>
+      <div class="container">
+        <div class="login">
+          <h1 class="login__title">ログイン</h1>
+          <div class="form-wrap">
+            <form>
+              <div class="form-item">
+                <label class="label">ユーザー名</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="ユーザー名を入力してください"
+                />
+              </div>
+              <div class="form-item">
+                <label class="label">パスワード</label>
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="パスワードを入力してください"
+                />
+              </div>
+              <div class="btn-area">
+                <input type="submit" value="ログインする" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-------------main------------->
+
+    <!------------footer------------>
+    <div class="footer__wrap">
+      <footer class="footer">
+        <small class="copy"
+          >Copyright © 2020 BOOKTALK, All Rights Reserved.</small
+        >
+      </footer>
+    </div>
+    <!------------footer------------>
+  </body>
+</html>
