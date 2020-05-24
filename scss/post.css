@@ -1,0 +1,73 @@
+.post {
+  width: 50%;
+  border: solid 2px #3f51b5;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 96px;
+}
+
+.post__title {
+  background: #3f51b5;
+  font-size: 160%;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.form-wrap {
+  margin-top: 48px;
+  width: 460px;
+  margin: 0 auto;
+}
+
+.form-item {
+  overflow: hidden;
+  margin-top: 48px;
+}
+
+.label {
+  float: left;
+  margin-right: 20px;
+  margin-top: 12px;
+  width: 128px;
+  border-left: solid 4px #3f51b5;
+  padding-left: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  border: solid 2px #3f51b5;
+  border-radius: 8px;
+  width: 300px;
+  height: 48px;
+  padding-left: 16px;
+  outline: 0;
+}
+
+.up-image {
+  width: 300px;
+  height: 48px;
+  outline: 0;
+}
+
+.btn-area {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  text-align: right;
+  margin-right: 12px;
+}
+
+.btn-area :hover {
+  opacity: 0.5;
+}
+
+input[type="submit"] {
+  background: #3f51b5;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  outline: 0;
+}
